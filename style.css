@@ -10,7 +10,7 @@ body{
 header{
     background-image: url("imagenes/fondo2.jpg");
     width: 100%;
-    height: 625px;
+    height: 750px;
     background-size: cover;
     background-position: center;
     overflow:hidden;
@@ -179,7 +179,12 @@ CONTACT SECTION
 #contact {
 	background-color: #141414;
 	color: #fff;
-	padding: 55px 0 58px;
+    border-radius: 5px;
+	padding: 48px 0 50px;
+    margin: 25px 15px;
+    border: 1px solid #ada2a2;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
 }
 
 .contact-subsection {
@@ -187,6 +192,7 @@ CONTACT SECTION
 	text-align: center;
 	min-height: 500px;
 	box-sizing: border-box;
+    border-radius: 5px;
     
 }
 
@@ -266,4 +272,80 @@ CONTACT SECTION
 #form-subsection .btn-default:active:focus, 
 #form-subsection .btn-default:active:hover {
 	color: #538157;
+}
+
+/**********************
+footer
+***********************/
+footer{
+    position: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    color: #fff;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: #fff;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
 }
